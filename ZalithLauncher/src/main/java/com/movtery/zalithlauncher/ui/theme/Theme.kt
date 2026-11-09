@@ -608,10 +608,11 @@ fun ZalithLauncherTheme(
     festivals: List<Festival> = emptyList(),
     content: @Composable () -> Unit
 ) {
-    val colorTheme = AllSettings.launcherColorTheme.state
-    val customColorInt = AllSettings.launcherCustomColor.state
-    val customColor = Color(customColorInt)
-    val customPaletteStyle = AllSettings.launcherCustomPaletteStyle.state
+    // KillMetric purple neon theme
+val colorTheme = ColorThemeType.CUSTOM
+val customColorInt = 0xFF9B5CFF.toInt()
+val customColor = Color(customColorInt)
+val customPaletteStyle = AllSettings.launcherCustomPaletteStyle.state
 
     val context = LocalContext.current
 
